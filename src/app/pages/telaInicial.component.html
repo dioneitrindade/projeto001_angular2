@@ -1,0 +1,5 @@
+<form [ngFormModel]="loginForm" (submit)="doLogin($event)">
+    <input ngControl="email" type="email" placeholder="Seu email">
+    <input ngControl="password" type="password" placeholder="Sua senha">
+  <button type="submit">Acessar</button>
+</form>
