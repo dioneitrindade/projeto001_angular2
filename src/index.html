@@ -21,5 +21,12 @@
 
   <body>
     <my-app>Loading AppComponent content here ...</my-app>
+    <form [ngFormModel]="telaInicialForm" (submit)="doLogin($event)">
+      <input ngControl="numeroCpf" type="Numerocpf" placeholder="Seu CPF"></br></br>        
+      <input ngControl="nome" type="Nome" placeholder="Seu nome">
+      <input ngControl="sobreNome" type="Sobrenome" placeholder="Seu sobrenome"></br></br>
+      <input ngControl="observacao" type="Observacao" placeholder="Observação"></br></br>
+      <button type="submit">Cadastrar</button>
+    </form>
   </body>
 </html>
